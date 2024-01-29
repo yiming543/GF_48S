@@ -1,0 +1,6 @@
+# complile 過程產生的
+*.dep
+*.rsp
+*.o
+*.su
+

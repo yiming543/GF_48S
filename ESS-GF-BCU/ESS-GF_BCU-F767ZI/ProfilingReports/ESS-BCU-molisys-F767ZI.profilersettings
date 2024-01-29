@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<SysprogsProfilerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Embedded>
+    <Sampling>
+      <SamplingRate>0</SamplingRate>
+      <StartImmediately>true</StartImmediately>
+    </Sampling>
+    <Mode>Sampling</Mode>
+  </Embedded>
+  <SessionFileDirectory>D:\projects\ESS-BCU-molisys-F767ZI\ESS-BCU-molisys-F767ZI\ProfilingReports\ESS-BCU-molisys-F767ZI</SessionFileDirectory>
+  <SessionName>2020/4/16 08:09:58</SessionName>
+</SysprogsProfilerSettings>
