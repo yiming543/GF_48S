@@ -33,7 +33,8 @@ namespace bmstech
 	    static int16_t Adc_temperatureTab(const uint16_t result_TH);
 	    static void Temperature_measurement();
 	    
-	    static int16_t Volt_temperatureTab(const uint16_t result_TH);
+	    static int16_t Volt_temperatureTab_T1(const uint16_t result_TH);
+	    static int16_t Volt_temperatureTab_T4(const uint16_t result_TH);
 
 
 	    static uint16_t Maximum(uint16_t* temp);

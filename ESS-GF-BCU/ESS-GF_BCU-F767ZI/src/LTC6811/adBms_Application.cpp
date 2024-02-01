@@ -409,27 +409,33 @@ namespace bmstech
 					//					temp = IC[current_ic].aux.a_codes[i]; 
 					if (BatterySys::pack[0].channel == 4) //T1
 					{
-						BatterySys::pack[current_ic].cellTemp[0] = IC[current_ic].aux.a_codes[1] / 10 ;	//GPIO2
+						BatterySys::pack[current_ic].cellTemp_v[0] = IC[current_ic].aux.a_codes[1] / 10 ;	//GPIO1 mV
+						BatterySys::pack[current_ic].cellTemp[0] = ADCC::Volt_temperatureTab_T1(IC[current_ic].aux.a_codes[1]);
 					}
 					else if (BatterySys::pack[0].channel == 5) //T2
 					{
-						BatterySys::pack[current_ic].cellTemp[1] = IC[current_ic].aux.a_codes[1] / 10;	//GPIO2
+						BatterySys::pack[current_ic].cellTemp_v[1] = IC[current_ic].aux.a_codes[1] / 10;	//GPIO1 mV
+						BatterySys::pack[current_ic].cellTemp[1] = ADCC::Volt_temperatureTab_T1(IC[current_ic].aux.a_codes[1]);
 					}
 					else if (BatterySys::pack[0].channel == 6) //T3
 					{
-						BatterySys::pack[current_ic].cellTemp[2] = IC[current_ic].aux.a_codes[1] / 10;	//GPIO2
+						BatterySys::pack[current_ic].cellTemp_v[2] = IC[current_ic].aux.a_codes[1] / 10;	//GPIO1 mV
+						BatterySys::pack[current_ic].cellTemp[2] = ADCC::Volt_temperatureTab_T1(IC[current_ic].aux.a_codes[1]);
 					}
 					else if (BatterySys::pack[0].channel == 7) //T4
 					{
-						BatterySys::pack[current_ic].cellTemp[3] = IC[current_ic].aux.a_codes[1] / 10;	//GPIO2
+						BatterySys::pack[current_ic].cellTemp_v[3] = IC[current_ic].aux.a_codes[1] / 10;	//GPIO1 mV
+						BatterySys::pack[current_ic].cellTemp[3] = ADCC::Volt_temperatureTab_T4(IC[current_ic].aux.a_codes[1]);
 					}
 					else if (BatterySys::pack[0].channel == 3) //T5
 					{
-						BatterySys::pack[current_ic].cellTemp[4] = IC[current_ic].aux.a_codes[1] / 10;	//GPIO2
+						BatterySys::pack[current_ic].cellTemp_v[4] = IC[current_ic].aux.a_codes[1] / 10;	//GPIO1 mV
+						BatterySys::pack[current_ic].cellTemp[4] = ADCC::Volt_temperatureTab_T1(IC[current_ic].aux.a_codes[1]);
 					}
 					else if (BatterySys::pack[0].channel == 2) //T6
 					{
-						BatterySys::pack[current_ic].cellTemp[5] = IC[current_ic].aux.a_codes[1] / 10;	//GPIO2
+						BatterySys::pack[current_ic].cellTemp_v[5] = IC[current_ic].aux.a_codes[1] / 10;	//GPIO1 mV
+						BatterySys::pack[current_ic].cellTemp[5] = ADCC::Volt_temperatureTab_T1(IC[current_ic].aux.a_codes[1]);
 					}
 					
 //					LTC6811SPI::Temp_CH[i - 1] = IC[current_ic].aux.a_codes[i] / 10; //GPIO6 Temp 2			

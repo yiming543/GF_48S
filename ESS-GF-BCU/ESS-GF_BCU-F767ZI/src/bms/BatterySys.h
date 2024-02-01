@@ -216,9 +216,10 @@ const int32_t MIN_CURRENT = -500000;
 
 	struct Pack_t 
 	{
-		uint16_t cellVolt[PackConst::MAX_CELL_NUM];                                                   //1mV
 		uint8_t cellBalance[PackConst::MAX_BALANCE_NUM];                                    //
-		
+		uint16_t cellVolt[PackConst::MAX_CELL_NUM];         
+		int16_t cellTemp[6];
+				
 		uint16_t PassiveBalanceComm[PackConst::MAX_BALANCE_NUM];
 			
 		uint16_t packMaxVolt;
@@ -235,7 +236,8 @@ const int32_t MIN_CURRENT = -500000;
 //		int16_t packAVG_Temp;
 
 		uint8_t channel;
-		int16_t cellTemp[6];
+//		int16_t cellTemp[6];
+		uint16_t cellTemp_v[6];
 //		int16_t cellTemp[18];
 		int16_t packTemp[4];
 		bool_t packADCFault;

@@ -133,6 +133,17 @@
             <a>false</a>
           </e32>
           <e32>
+            <c>bmstech::BatterySys::pack[0].cellVolt</c>
+            <f>true</f>
+            <e>
+              <ComparisonMode>Equals</ComparisonMode>
+              <Enabled>false</Enabled>
+            </e>
+            <h>false</h>
+            <g>false</g>
+            <a>false</a>
+          </e32>
+          <e32>
             <c>bmstech::BatterySys::pack[0].cellTemp</c>
             <f>true</f>
             <e>
